@@ -18,9 +18,8 @@
     </head>
     <body>
         <div data-role="page" id="homePage">
-            <!--Header has buttons for full site navigation, home, contact, and about. Quick Nav 
-            pops up in a panel. Specific Requirements, Header E, Icons K-->
-            <div data-role="panel" id="leftPanel" data-display="overlay" style="width:500px; white-space:normal;
+            <!--Popup panel for navigation. Specific Requirements, Panel I-->
+            <div data-role="panel" id="leftPanel" data-display="overlay" style="width:300px; white-space:normal;
             background-image: url(images/VidjioLogo.jpg);">
                 <a href="index.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Home</a> 
                 <a href="library.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Game Library</a>
@@ -34,6 +33,9 @@
                     <a data-role="button" data-rel="close">Close</a>
                 </p>
             </div>
+
+            <!--Header has buttons for full site navigation, home, contact, and about. Quick Nav 
+            pops up in a panel. Specific Requirements, Header E, Icons K-->
             <div data-role="header" data-position="fixed">
                 <h1 class="ui-title" role="heading">Home</h1> <!--Specific Requirement B-->
                 <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
@@ -54,40 +56,9 @@
             </div>
 
             <!--Main content of the page goes here.-->
-            <div role="main" class="ui-content"
-            style="text-align:center;
-            margin-left:20px;
-            margin-right:20px;
-            white-space:normal;">
-            <div data-role="header">
-                 <h2 style="background-color: skyblue; text-align:center;">Repairs</h2>
+            <div role="main" class="ui-content">
+                
             </div>
-            <ul data-role="listview" data-inset="true">
-                <li>Repair Walls.</li>
-                <li>Fix Paint.</li>
-                <li>Water leaks.</li>
-                <li>Flooring.</li>
-                <li>Smoke and carbon monoxide alarms are functioning.</li>   
-                <li>Roof damage\leaks.</li> 
-            </ul>
-            <a href="#leftPanel" data-role="button">Click here for cleaning instructions.</a>
-        </div>
-
-            <!--Popup panel for navigation. Specific Requirements, Panel I-->
-            <!--<div data-role="panel" id="leftPanel" data-display="overlay" style="width:200px; white-space:normal;
-            background-image: url(images/VidjioLogo.jpg);">
-                    <a href="index.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Home</a> 
-                    <a href="library.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Game Library</a>
-                    <a href="review.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Game Reviews</a>
-                    <a href="top.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Top Games</a>
-                    <a href="info.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">Game Info</a> 
-                    <a href="add.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">Add Games</a>                     
-                    <a href="about.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">About</a>
-                    <a href="contact.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">Contact</a>
-                 <p>
-                    <a data-role="button" data-rel="close">Close</a>
-                </p>        
-            </div>-->
             <!--Footer area. Specific Requirement E-->
             <div data-role="footer" data-position="fixed" style="text-align: center">
                 <h4>Vid-Jio Games</h4>
