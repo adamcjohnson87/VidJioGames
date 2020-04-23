@@ -1,0 +1,63 @@
+<!--Contact Page, hosts contact information for the websites owner. Gen Req B-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Vid-Jio Games</title>        
+        <link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <!--In style CSS for the background image on each page.-->
+        <style>
+            .ui-page {
+                background: transparent url(images/VidjioLogo.jpg) no-repeat center center;
+                background-size:cover;  
+            }
+        </style>
+    </head>
+    <body>
+        <div data-role="page" id="homePage">
+            <!--Header has buttons for full site navigation, home, contact, and about. Quick Nav 
+            pops up in a panel. Specific Requirements, Header E, Icons K-->
+            <div data-role="header" data-position="fixed">
+                <h1 class="ui-title" role="heading">Vid-Jio Games Contact</h1> <!--Specific Requirement B-->
+                <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
+                 <a href="#leftPanel" data-role="button" data-icon="grid">Quick Nav</a>
+                 <a href="index.html" data-role="button" data-icon="home">Home</a>
+                </div>
+                <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
+                    <a href="about.html" data-role="button" data-icon="info">About</a>
+                    <a href="contact.html" data-role="button" data-icon="mail">Contact</a>
+                </div>
+            </div>
+
+            <!--Main content of the page goes here.-->
+            <div role="main" class="ui-content">  
+
+            </div>
+
+            <!--Popup panel for navigation. Specific Requirements, Panel I-->
+            <div data-role="panel" id="leftPanel" data-display="overlay" style="width:200px; white-space:normal; 
+           background-image: url(images/VidjioLogo.jpg);">
+                    <a href="index.html" data-prefetch="true" data-transition="slidedown" data-role="button">Home</a> 
+                    <a href="library.html" data-prefetch="true" data-transition="slidedown" data-role="button">Game Library</a>
+                    <a href="review.html" data-prefetch="true" data-transition="slidedown" data-role="button">Game Reviews</a>
+                    <a href="top.html" data-prefetch="true" data-transition="slidedown" data-role="button">Top Games</a>
+                    <a href="info.html" data-prefetch="true" data-transition="flip" data-role="button">Game Info</a> 
+                    <a href="add.html" data-prefetch="true" data-transition="flip" data-role="button">Add Games</a>                     
+                    <a href="about.html" data-prefetch="true" data-transition="flip" data-role="button">About</a>
+                    <a href="contact.html" data-prefetch="true" data-transition="flip" data-role="button">Contact</a>
+                </ul>
+                 <p>
+                    <a data-role="button" data-rel="close">Close</a>
+                </p>        
+            </div>
+            <!--Footer area. Specific Requirement E-->
+            <div data-role="footer" data-position="fixed" style="text-align: center">
+                <h4>Vid-Jio Games</h4>
+                <h4>Copyright Adam Johnson &copy; 2020</h4>
+            </div>
+        </div>
+    </body>
+</html>
