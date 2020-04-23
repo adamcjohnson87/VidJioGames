@@ -1,4 +1,4 @@
-<!--Home Page, first page of the application that greets users. Gen Req B-->
+<!--Add Page, allows users to add their own games. Gen Req B-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,21 +21,21 @@
             <!--Header has buttons for full site navigation, home, contact, and about. Quick Nav 
             pops up in a panel. Specific Requirements, Header E, Icons K-->
             <div data-role="header" data-position="fixed">
-                <h1 class="ui-title" role="heading">Vid-Jio Games Home</h1> <!--Specific Requirement B-->
+                <h1 class="ui-title" role="heading">Add Vid-Jio Games</h1> <!--Specific Requirement B-->
                 <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
-                 <a href="#leftPanel" data-role="button" data-icon="grid">Quick Nav</a>
-                 <a href="index.html" data-role="button" data-icon="home">Home</a>
+                    <a href="#leftPanel" data-role="button" data-icon="grid">Quick Nav</a>
+                    <a href="index.html" data-role="button" data-icon="home" rel="external">Home</a>
                 </div>
                 <div class="ui-btn-right" data-role="controlgroup" data-type="horizontal">
-                    <a href="about.html" data-role="button" data-icon="info">About</a>
-                    <a href="contact.html" data-role="button" data-icon="mail">Contact</a>
+                    <a href="about.html" data-role="button" data-icon="info" rel="external">About</a>
+                    <a href="contact.html" data-role="button" data-icon="mail" rel="external">Contact</a>
                 </div>
             </div>
             <!--Navigation section. Specific Requirements, Navbar F, Prefetch C, Transitions D, -->
             <div data-role="navbar"> 
                 <ul>
-                    <li><a href="library.html" data-prefetch="true" data-transition="slidedown">Game Library</a></li>
-                    <li><a href="review.html" data-prefetch="true" data-transition="flow">Game Reviews</a></li>                    
+                    <li><a href="library.html" data-prefetch="true" data-transition="slidedown" rel="external">Game Library</a></li>
+                    <li><a href="review.html" data-prefetch="true" data-transition="flow" rel="external">Game Reviews</a></li>                    
                 </ul>
             </div>
 
@@ -46,17 +46,17 @@
 
             <!--Popup panel for navigation. Specific Requirements, Panel I-->
             <div data-role="panel" id="leftPanel" data-display="overlay" style="width:200px; white-space:normal; 
-           background-image: url(images/VidjioLogo.jpg);">
-                    <a href="index.html" data-prefetch="true" data-transition="slidedown" data-role="button">Home</a> 
-                    <a href="library.html" data-prefetch="true" data-transition="slidedown" data-role="button">Game Library</a>
-                    <a href="review.html" data-prefetch="true" data-transition="slidedown" data-role="button">Game Reviews</a>
-                    <a href="top.html" data-prefetch="true" data-transition="slidedown" data-role="button">Top Games</a>
-                    <a href="info.html" data-prefetch="true" data-transition="flip" data-role="button">Game Info</a> 
-                    <a href="add.html" data-prefetch="true" data-transition="flip" data-role="button">Add Games</a>                     
-                    <a href="about.html" data-prefetch="true" data-transition="flip" data-role="button">About</a>
-                    <a href="contact.html" data-prefetch="true" data-transition="flip" data-role="button">Contact</a>
+            background-image: url(images/VidjioLogo.jpg);">
+                    <a href="index.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Home</a> 
+                    <a href="library.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Game Library</a>
+                    <a href="review.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Game Reviews</a>
+                    <a href="top.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Top Games</a>
+                    <a href="info.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">Game Info</a> 
+                    <a href="add.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">Add Games</a>                     
+                    <a href="about.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">About</a>
+                    <a href="contact.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">Contact</a>
                 </ul>
-                 <p>
+                <p>
                     <a data-role="button" data-rel="close">Close</a>
                 </p>        
             </div>
