@@ -17,7 +17,22 @@
         </style>
     </head>
     <body>
-        <div data-role="page" id="homePage">
+        <div data-role="page" id="addpage">
+            <!--Popup panel for navigation. Specific Requirements, Panel I-->
+            <div data-role="panel" id="leftPanel" data-display="overlay" style="width:300px; white-space:normal;
+            background-image: url(images/VidjioLogo.jpg);">
+                <a href="index.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Home</a> 
+                <a href="library.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Game Library</a>
+                <a href="review.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Game Reviews</a>
+                <a href="top.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Top Games</a>
+                <a href="info.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">Game Info</a> 
+                <a href="add.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">Add Games</a>                     
+                <a href="about.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">About</a>
+                <a href="contact.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">Contact</a>
+                <p>
+                    <a data-role="button" data-rel="close">Close</a>
+                </p>
+            </div>
             <!--Header has buttons for full site navigation, home, contact, and about. Quick Nav 
             pops up in a panel. Specific Requirements, Header E, Icons K-->
             <div data-role="header" data-position="fixed">
@@ -44,26 +59,12 @@
 
             </div>
 
-            <!--Popup panel for navigation. Specific Requirements, Panel I-->
-            <div data-role="panel" id="leftPanel" data-display="overlay" style="width:200px; white-space:normal; 
-            background-image: url(images/VidjioLogo.jpg);">
-                    <a href="index.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Home</a> 
-                    <a href="library.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Game Library</a>
-                    <a href="review.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Game Reviews</a>
-                    <a href="top.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Top Games</a>
-                    <a href="info.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">Game Info</a> 
-                    <a href="add.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">Add Games</a>                     
-                    <a href="about.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">About</a>
-                    <a href="contact.html" data-prefetch="true" data-transition="flip" data-role="button" rel="external">Contact</a>
-                </ul>
-                <p>
-                    <a data-role="button" data-rel="close">Close</a>
-                </p>        
-            </div>
             <!--Footer area. Specific Requirement E-->
             <div data-role="footer" data-position="fixed" style="text-align: center">
-                <h4>Vid-Jio Games</h4>
-                <h4>Copyright Adam Johnson &copy; 2020</h4>
+                <a href="index.html" data-role="button" data-icon="home" rel="external">Home</a>
+                <a href="about.html" data-role="button" data-icon="info" rel="external">About</a>
+                <a href="contact.html" data-role="button" data-icon="mail" rel="external">Contact</a>
+                <h4>Vid-Jio Games - Copyright Adam Johnson &copy; 2020</h4>
             </div>
         </div>
     </body>
