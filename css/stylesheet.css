@@ -1,0 +1,8 @@
+#divback {                
+    background: rgba(0, 0, 0, 0.5);
+    text-align:center;
+    border-radius: 25px;
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+}
