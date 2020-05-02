@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/application.js"></script> <!--Local Storage Application Spec Requirement I-->
         <!--In style CSS for the background image on each page. Needed to overwrite themeroller background.-->
         <style>
             .ui-page {
@@ -42,7 +43,6 @@
                 <h1 class="ui-title" role="heading">Game List</h1> <!--Specific Requirement B-->
                 <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
                     <a href="#leftPanel" data-role="button" data-icon="grid">Quick Nav</a>
-                    <a href="index.html" data-role="button" data-icon="home" rel="external">Home</a>
                 </div>
                 <img src="images/VidJioLogoSmall.jpg" class="ui-btn-right" id="headerLogo"/>
             </div>
@@ -70,11 +70,7 @@
                         </div>
                         <div style="flex-grow: 1; background: rgba(3, 77, 214, 0.555); margin-left: 1%;">
                             <h4 style="text-align:center;">User List</h4>
-                            <ul data-role="listview" data-inset="true" style="margin-left: 5%; margin-right: 5%;">
-                                <li>Place Holder Info</li>
-                                <li>Place Holder Info 2</li>
-                                <li>Place Holder Info 3</li>
-                            </ul>
+                            <ul id="gamelist2" data-role="listview" data-inset="true" style="margin-left: 5%; margin-right: 5%;"></ul>
                         </div>
                     </div>
                  </div>

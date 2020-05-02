@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/application.js"></script> <!--Local Storage Application Spec Requirement I-->
         <!--In style CSS for the background image on each page. Needed to overwrite themeroller background.-->
         <style>
             .ui-page {
@@ -36,13 +37,20 @@
                     <a data-role="button" data-rel="close">Close</a>
                 </p>
             </div>
+            <!--Popup right panel for gameinfo. Specific Requirements, Panel I-->
+            <div data-role="panel" id="rightpanel" data-position="right" data-display="overlay"
+            style="width:300px; white-space:normal; background-image: url(images/VidjioLogo.jpg);">
+                <div id="panelinfo">
+                    <h3 id="name"></h3>
+                    <p id="gameinfo" style="text-align:center;"></p>                      
+                </div>
+            </div>
             <!--Header has buttons for full site navigation, home, contact, and about. Quick Nav 
             pops up in a panel. Specific Requirements, Header E, Icons K-->
             <div data-role="header" data-position="fixed">
                 <h1 class="ui-title" role="heading">Game Info</h1> <!--Specific Requirement B-->
                 <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
                     <a href="#leftPanel" data-role="button" data-icon="grid">Quick Nav</a>
-                    <a href="index.html" data-role="button" data-icon="home" rel="external">Home</a>
                 </div>
                 <img src="images/VidJioLogoSmall.jpg" class="ui-btn-right" id="headerLogo"/>
             </div>
@@ -58,51 +66,7 @@
             <div role="main" class="ui-content">  
                 <h2 style="text-align:center;">Game Information - Select a game series below to see information.</h2>
                 <div id="divback"> 
-                    <div data-role="collapsible">
-                        <h3>Mass Effect</h3>
-                        <p>Epic Sci-Fi Trilogy followed up with a stand alone game.
-                            The original trilogy was very popular in its time. The second game wasn't received as well as the original,
-                            but was still a solid game. 
-                        </p> 
-                    </div>             
-                    <div data-role="collapsible">
-                        <h3>Final Fantasy</h3>
-                        <p>A never ending role playing series with dozens of entries.
-                            The numbered series goes up to 15 at the time of this writing.
-                            However, many of those numbered entries have branched off into other games, and quite a few stand alone entries. 
-                        </p>
-                    </div>
-                    <div data-role="collapsible">
-                        <h3>Resident Evil</h3>
-                        <p>A survival horror series based around a shady organization known as Umbrella, zombies and odd mutants included.
-                            Players fight zombies and various other mutants with limited resources. 
-                        </p>
-                    </div>
-                    <div data-role="collapsible">
-                        <h3>Elder Scrolls</h3>
-                        <p>A role playing epic that takes place in a fantasy world known as Nirn on the continent of Tamriel.
-                            There is currently a total of 5 main titles, with a few spin offs. The last title was released in 2011
-                            and is still modded and played to this day. 
-                        </p>
-                    </div>
-                    <div data-role="collapsible">
-                        <h3>God of War</h3>
-                        <p>A high octane action game that takes place in ancient greece. You play as Kratos who has been used and 
-                            abused by the gods. In these stories, he seeks revenge on them.
-                        </p>
-                    </div>
-                    <div data-role="collapsible">
-                        <h3>Doom</h3>
-                        <p>A popular shooter series that has had a recent comeback since originally launching decades ago. 
-                            You play as a super marine who's sole job is to kill demons from hell. 
-                        </p>
-                    </div>
-                    <div data-role="collapsible">
-                        <h3>Diablo</h3>
-                        <p>An action role playing looting game. Choose your class and go up against the lords of hell, 
-                            all while gaining precious randomized loot. 
-                        </p>
-                    </div>
+                    <ul id="gamelist" data-role="listview" data-inset="true" style="margin-left: 5%; margin-right: 5%;"></ul>
                 </div>
             </div>
 
