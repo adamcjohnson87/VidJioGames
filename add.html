@@ -22,7 +22,7 @@
     </head>
     <body>
         <div data-role="page" id="addpage">
-            <!--Popup panel for navigation. Specific Requirements, Panel I-->
+            <!--Popup panel for navigation. Specific Requirements, Panel I, pre-fetch C, transitions D-->
             <div data-role="panel" id="leftPanel" data-display="overlay" style="width:300px; white-space:normal;
             background-image: url(images/VidjioLogo.jpg);">
                 <a href="index.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Home</a> 
@@ -37,8 +37,7 @@
                     <a data-role="button" data-rel="close">Close</a>
                 </p>
             </div>
-            <!--Header has buttons for full site navigation, home, contact, and about. Quick Nav 
-            pops up in a panel. Specific Requirements, Header E, Icons K-->
+            <!--Quick Nav pops up in a panel. Specific Requirements, Header E, Icons K-->
             <div data-role="header" data-position="fixed">
                 <h1 class="ui-title" role="heading">Add Games</h1> <!--Specific Requirement B-->
                 <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
@@ -58,10 +57,10 @@
             <div role="main" class="ui-content">  
                 <h2 style="text-align:center;">Enter your game information below to add it to your library.</h2>
                 <div id="divback">
+                    <!--Form to add game to local storage. Spec Req H Form, j Local Storage-->
                     <form>
                         <div class="ui-field-contain">
                             <label for="name">Game Name:</label>
-                            <!--<input type="text"name="name"id="name"value="" />-->
                             <input id="name" type="text" placeholder="Enter game title" />
                         </div>
                         <div class="ui-field-contain">
@@ -70,17 +69,18 @@
                                 <option value="shooter">Shooter</option>
                                 <option value="rpg">RPG</option>
                                 <option value="action">Action</option>
-                                <option value="advent">Adventure</option>
+                                <option value="horror">Horror</option>
+                                <option value="adventure">Adventure</option>
                                 <option value="sports">Sports</option>
                                 <option value="racing">Racing</option>
                                 <option value="strategy">Strategy</option>
-                                <option value="simul">Simulation</option>
+                                <option value="simulation">Simulation</option>
                                 <option value="puzzel">Puzzel</option>
                                 <option value="platform">Platformer</option>
                                 <option value="fighting">Fighting</option>
                                 <option value="rhythm">Rhythm</option>
                                 <option value="mmo">MMO</option>
-                                <option value="vr">Virtual Reality</option>
+                                <option value="vr">VR</option>
                               </select>
                         </div>
                         <div class="ui-field-contain">
@@ -89,7 +89,6 @@
                         </div>
                         <div class="ui-field-contain">
                             <label for="gameinfo">Game Info:</label>
-                            <!--<textarea name="gameinfo"id="gameinfo"></textarea>-->
                             <textarea id="gameinfo" placeholder="Enter game description">
                             </textarea>
                         </div>
@@ -99,7 +98,11 @@
                     </form>
                 </div>
             </div>
-
+            <!--Popup called from javascript after the add button is hit. Spec Rec I Popup.-->
+            <div data-role="popup" id="gameadd" data-dismissible="false" class="ui-content">
+                <p>Game Added!</p>
+                <a href="" data-rel="back" data-theme="b" data-role="button">Continue</a>
+                </div>
             <!--Footer area. Specific Requirement E-->
             <div data-role="footer" data-position="fixed" style="text-align: center">
                 <a href="index.html" data-role="button" data-icon="home" rel="external">Home</a>

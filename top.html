@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/application.js"></script> <!--Local Storage Application Spec Requirement I-->
         <!--In style CSS for the background image on each page. Needed to overwrite themeroller background.-->
         <style>
             .ui-page {
@@ -21,7 +22,7 @@
     </head>
     <body>
         <div data-role="page" id="toppage">
-            <!--Popup panel for navigation. Specific Requirements, Panel I-->
+            <!--Popup panel for navigation. Specific Requirements, Panel I, pre-fetch C, transitions D-->
             <div data-role="panel" id="leftPanel" data-display="overlay" style="width:300px; white-space:normal;
             background-image: url(images/VidjioLogo.jpg);">
                 <a href="index.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Home</a> 
@@ -36,8 +37,7 @@
                     <a data-role="button" data-rel="close">Close</a>
                 </p>
             </div>
-            <!--Header has buttons for full site navigation, home, contact, and about. Quick Nav 
-            pops up in a panel. Specific Requirements, Header E, Icons K-->
+            <!-- Quick Nav pops up in a panel. Specific Requirements, Header E, Icons K-->
             <div data-role="header" data-position="fixed">
                 <h1 class="ui-title" role="heading">Top Games</h1> <!--Specific Requirement B-->
                 <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
@@ -56,80 +56,25 @@
             <!--Main content of the page goes here.-->
             <div role="main" class="ui-content">  
                 <h2 style="text-align:center;">List of top Vid-Jio Games.</h2>
+                <!--Grid, dynamically populated from local storage via application.js, Spec Req I grid, J local storage.-->
                 <div class="ui-grid-c" id="divback">
                     <div class="ui-field-contain">
                         <label for="category">Category:</label>
                         <select id="category" name="category">
-                            <option value="shooter">Shooter</option>
-                            <option value="rpg">RPG</option>
-                            <option value="action">Action</option>
-                            <option value="advent">Adventure</option>
-                            <option value="sports">Sports</option>
-                            <option value="racing">Racing</option>
-                            <option value="strategy">Strategy</option>
-                            <option value="simul">Simulation</option>
-                            <option value="puzzel">Puzzel</option>
-                            <option value="platform">Platformer</option>
-                            <option value="fighting">Fighting</option>
-                            <option value="rhythm">Rhythm</option>
-                            <option value="mmo">MMO</option>
-                            <option value="vr">Virtual Reality</option>
                           </select>
                     </div>
-                    <div class="ui-block-a">
-                        <p>Name</p>
-                        <p>Mass Effect</p>
-                        <p>Battlefield 5</p>
-                        <p>Beat Saber</p>
+                    <div class="ui-block-a" id="gridname">
                     </div>
-                    <div class="ui-block-b">
-                        <p>Rating</p>
-                        <p>10</p>
-                        <p>7</p>
-                        <p>9</p>
+                    <div class="ui-block-b" id="gridrating">
                     </div>
-                    <div class="ui-block-c">
-                        <p>Category</p>
-                        <p>RPG</p>
-                        <p>Shooter</p>
-                        <p>Virutal Reality</p>
+                    <div class="ui-block-c" id="gridcategory">
                     </div>
-                    <div class="ui-block-d">
-                        <p>Added By</p>
-                        <p>Vid-Jio</p>
-                        <p>Vid-Jio</p>
-                        <p>Vid-Jio</p>
-                    </div>
-                </div>  
-                <div class="ui-grid-c" id="divback">
-                    <div class="ui-block-a">
-                        <p>Name</p>
-                        <p>Mass Effect</p>
-                        <p>Battlefield 5</p>
-                        <p>Beat Saber</p>
-                    </div>
-                    <div class="ui-block-b">
-                        <p>Rating</p>
-                        <p>10</p>
-                        <p>7</p>
-                        <p>9</p>
-                    </div>
-                    <div class="ui-block-c">
-                        <p>Category</p>
-                        <p>RPG</p>
-                        <p>Shooter</p>
-                        <p>Virutal Reality</p>
-                    </div>
-                    <div class="ui-block-d">
-                        <p>Added By</p>
-                        <p>Vid-Jio</p>
-                        <p>Vid-Jio</p>
-                        <p>Vid-Jio</p>
+                    <div class="ui-block-d" id="gridadd">
                     </div>
                 </div>  
             </div>
 
-            <!--Footer area. Specific Requirement E-->
+            <!--Footer area. Specific Requirement E, K icons. -->
             <div data-role="footer" data-position="fixed" style="text-align: center">
                 <a href="index.html" data-role="button" data-icon="home" rel="external">Home</a>
                 <a href="about.html" data-role="button" data-icon="info" rel="external">About</a>

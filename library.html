@@ -22,7 +22,7 @@
     </head>
     <body>
         <div data-role="page" id="librarypage">
-            <!--Popup panel for navigation. Specific Requirements, Panel I-->
+            <!--Popup panel for navigation. Specific Requirements, Panel I, pre-fetch C, transitions D-->
             <div data-role="panel" id="leftPanel" data-display="overlay" style="width:300px; white-space:normal;
             background-image: url(images/VidjioLogo.jpg);">
                 <a href="index.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Home</a> 
@@ -37,8 +37,7 @@
                     <a data-role="button" data-rel="close">Close</a>
                 </p>
             </div>
-            <!--Header has buttons for full site navigation, home, contact, and about. Quick Nav 
-            pops up in a panel. Specific Requirements, Header E, Icons K-->
+            <!--Quick Nav pops up in a panel. Specific Requirements, Header E, Icons K-->
             <div data-role="header" data-position="fixed">
                 <h1 class="ui-title" role="heading">Game List</h1> <!--Specific Requirement B-->
                 <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
@@ -62,21 +61,27 @@
                     <div class="container" style="display: flex;">
                         <div style="width: 50%; background: rgba(5, 180, 5, 0.5);"> 
                             <h4 style="text-align:center;">Vid-Jio List</h4>
+                            <!--VidJios list of games, Spec Req G-->
                             <ul data-role="listview" data-inset="true" style="margin-left: 5%; margin-right: 5%;">
-                                <li>Place Holder Info</li>
-                                <li>Place Holder Info 2</li>
-                                <li>Place Holder Info 3</li>
+                                <li>Mass Effect<span class="ui-li-count">4</span></li>
+                                <li>Final Fantasy<span class="ui-li-count">LOTS</span></li>
+                                <li>Resident Evil<span class="ui-li-count">11</span></li>
+                                <li>Elder Scrolls<span class="ui-li-count">7</span></li>
+                                <li>God of War<span class="ui-li-count">5</span></li>
+                                <li>Doom<span class="ui-li-count">9</span></li>
+                                <li>Diablo<span class="ui-li-count">3</span></li>
                             </ul>
                         </div>
                         <div style="flex-grow: 1; background: rgba(3, 77, 214, 0.555); margin-left: 1%;">
                             <h4 style="text-align:center;">User List</h4>
+                            <!--Users list, dynamically populated from application.js, Spec Req G List, J Local Storage-->
                             <ul id="gamelist2" data-role="listview" data-inset="true" style="margin-left: 5%; margin-right: 5%;"></ul>
                         </div>
                     </div>
                  </div>
             </div>
 
-            <!--Footer area. Specific Requirement E-->
+            <!--Footer area. Specific Requirement E, K Icons-->
             <div data-role="footer" data-position="fixed" style="text-align: center">
                 <a href="index.html" data-role="button" data-icon="home" rel="external">Home</a>
                 <a href="about.html" data-role="button" data-icon="info" rel="external">About</a>

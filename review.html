@@ -21,7 +21,7 @@
     </head>
     <body>
         <div data-role="page" id="reviewpage">
-            <!--Popup panel for navigation. Specific Requirements, Panel I-->
+            <!--Popup panel for navigation. Specific Requirements, Panel I, pre-fetch C, transitions D-->
             <div data-role="panel" id="leftPanel" data-display="overlay" style="width:300px; white-space:normal;
             background-image: url(images/VidjioLogo.jpg);">
                 <a href="index.html" data-prefetch="true" data-transition="slidedown" data-role="button" rel="external">Home</a> 
@@ -36,8 +36,7 @@
                     <a data-role="button" data-rel="close">Close</a>
                 </p>
             </div>
-            <!--Header has buttons for full site navigation, home, contact, and about. Quick Nav 
-            pops up in a panel. Specific Requirements, Header E, Icons K-->
+            <!--Quick Nav pops up in a panel. Specific Requirements, Header E, Icons K-->
             <div data-role="header" data-position="fixed">
                 <h1 class="ui-title" role="heading">Game Reviews</h1> <!--Specific Requirement B-->
                 <div class="ui-btn-left" data-role="controlgroup" data-type="horizontal">
@@ -61,6 +60,7 @@
                     <div class="container" style="display: flex;">
                         <div style="width: 50%; background: rgba(3, 77, 214, 0.555);"> 
                             <h4 style="text-align:center;">Top Review Websites</h4>
+                            <!--Collapsible widgets, Spec Req I-->
                             <div data-role="collapsible" style="margin-left: 5%; margin-right: 5%;">
                                 <h3>IGN</h3>
                                 <p>A popular entertainment website that hosts gaming events and reviews. As with 
@@ -86,6 +86,7 @@
                         </div>
                         <div style="flex-grow: 1; background: rgba(5, 180, 5, 0.5); margin-left: 1%;">
                             <h4 style="text-align:center;">Vid-Jio Reviews</h4> 
+                            <!--Collapsible widgets, Spec Req I-->
                             <div data-role="collapsible" style="margin-left: 5%; margin-right: 5%;">
                                 <h3>Mass Effect</h3>
                                 <p>Epic Sci-Fi Trilogy followed up with a stand alone game.
@@ -160,7 +161,7 @@
                  </div>
             </div>
 
-            <!--Footer area. Specific Requirement E-->
+            <!--Footer area. Specific Requirement E, K Icons-->
             <div data-role="footer" data-position="fixed" style="text-align: center">
                 <a href="index.html" data-role="button" data-icon="home" rel="external">Home</a>
                 <a href="about.html" data-role="button" data-icon="info" rel="external">About</a>
